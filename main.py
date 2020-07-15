@@ -260,15 +260,15 @@ def main():
     pert_graph = perturbation(g, 0)
     pert_graph_karate = perturbation(karate_graph, .20)
 
-    # print("Measures for email graph before perturbation")
-    # calculate_measures(g)
-    # print("Measures for email graph after %10 perturbation ")
-    # calculate_measures(pert_graph)
-    #
-    # print("Measures for karate graph before perturbation")
-    # calculate_measures(karate_graph)
-    # print("Measures for karate graph after %20 perturbation ")
-    # calculate_measures(pert_graph_karate)
+    print("Measures for email graph before perturbation")
+    calculate_measures(g)
+    print("Measures for email graph after %10 perturbation ")
+    calculate_measures(pert_graph)
+
+    print("Measures for karate graph before perturbation")
+    calculate_measures(karate_graph)
+    print("Measures for karate graph after %20 perturbation ")
+    calculate_measures(pert_graph_karate)
 
     layout_pert = nx.spring_layout(pert_graph)
     layout_karate_pert_karate = nx.spring_layout(pert_graph_karate)
