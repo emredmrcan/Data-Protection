@@ -178,7 +178,7 @@ def create_equivalence_class(equivalence_calc_list):
     For vertex it keeps degrees, for subgraph it keeps nodes which have isomorphic subgraphs
     Returns
     ----------
-    0: [1,2], 1: [3,4], 2: [1,2] -> 0: [1,2], 1: [3,4] # Duplicates are eliminated.
+    0: [1,2], 1: [3,4], 2: [1,2] -> [1,2], [3,4] # Duplicates are eliminated.
     Parameters
     ----------
     equivalence_calc_list : Pre defined equivalance calculation list
